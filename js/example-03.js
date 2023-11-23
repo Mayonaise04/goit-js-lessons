@@ -21,22 +21,22 @@
 
 //!========================================================
 
-document.addEventListener('keydown', event => {
-  console.log('Keydown: ', event);
-});
+// document.addEventListener('keydown', event => {
+  // console.log('Keydown: ', event);
+// });
 
 //!========================================================
 
-// const btn = document.querySelector('.js-btn');
+const btn = document.querySelector('.js-btn');
 
-// btn.addEventListener('click', handleClick);
+btn.addEventListener('click', handleClick);
 
-// let counter = 0;
+let counter = 0;
 
-// function handleClick(e) {
-//   counter++;
-//   console.log(counter);
-//   if (counter === 5) {
-//     btn.removeEventListener('click', handleClick);
-//   }
-// }
+function handleClick(e) {
+  counter++;
+  console.log(counter);
+  if (counter === 5) {
+    btn.removeEventListener('click', handleClick);
+  }
+}
